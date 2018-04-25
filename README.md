@@ -1,19 +1,20 @@
 # FoundationsDemo123
 
 ## Goal
-Send an encrypted message to a Web API, store it, and decrypt the message using Azure Key Vault
-For example say 'Alice', or a customer needs to send us a message securely and our business needs to decrypt the message. 
+Send an encrypted message to a Web API, store it, and decrypt the message using Azure Key Vault.
+Image that 'Alice' or a customer needs to send us a message securely and it is our business to decrypt the message. 
 
 ## **Disclaimer** 
 __Not all parts of this application are secure__
 Do these steps at your _own risk_. You may find it a good exercise to secure the parts of this demo that aren't so secure.
 
 ## Setup Steps
-1. Create client-facing web app application to submit encrypted files.
-2. Create Azure Storage Account to store the files in a Queue.
-3. Create console application to read encrypted files off the queue.
-4. Decrypt files with Azure Key Vault.
-5. Print secret message to console.
+1. Create public/private key pair (.pfx) file. The public key we will send to Alice to encrypt with. 
+2. Create client-facing web app application to submit encrypted files.
+3. Create Azure Storage Account to store the files in a Queue.
+4. Create console application to read encrypted files off the queue.
+5. Decrypt files with Azure Key Vault.
+6. Print secret message to console.
 
 ### Encrypted Communication Setup
   Download OpenSSL for Windows.
