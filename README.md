@@ -20,7 +20,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
   Download OpenSSL for Windows.
   https://slproweb.com/products/Win32OpenSSL.html
   
-  Create a Self-Signed Certificate
+  Create a Self-Signed Certificate by Opening CMD and Running these commands in the install location of OpenSSL (C:\OpenSSL-Win32\bin)
   
   Through this process it will prompt for a password to encrypt/decrypt the private key, choose an easy-to-remember password for this demo.
   
