@@ -21,6 +21,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
   https://slproweb.com/products/Win32OpenSSL.html
   
   Create a Self-Signed Certificate
+  
   Through this process it will prompt for a password to encrypt the private key, choose an easy-to-remember password for this demo.
   
   `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out cert.crt -config "C:\OpenSSL-Win32\bin\openssl.cfg"`
@@ -112,4 +113,5 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
 Credits to: 
 
 https://www.sslshopper.com/article-most-common-openssl-commands.html
+
 https://gist.github.com/crazybyte/4142975
