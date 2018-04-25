@@ -101,14 +101,11 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  
  ![Screenshot](KeyVault.PNG)
  
- Create an app to read off the queue
- 1. Open Visual Studio
- 2. New Project -> Console Application
- To authenticate with Azure Storage, go to your created Queue and click access keys, paste the key into the value for the application in the Web.Config setting for "StorageConnectionString"
- You will also need to paste the hard-coded queue name when you execute the method GetQueueReference(<queue-name>)
- Now create 
+ Now that there are encrypted messages in the queue, we can take them off the queue and decrypt with our Key Stored in Key Vault
+ Open the Queue Reader solution in Visual Studio, make sure to replace all of your names/connection strings to your own.
+ Click Run and it will get the first message off the Queue when you type in 'Next'.
  
-
+ If all works, you should see the decrypted message in the Console Window
 
 Credits to: 
 
