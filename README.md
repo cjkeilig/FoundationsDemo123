@@ -42,7 +42,9 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  After you have made an account with Microsoft, log-in to https://portal.azure.com/article-most-common-openssl-commands
  
  I added a storage account called demoqueue which holds storage resources such as Blobs, Files, Tbles and Queues. We will be using a queue
+ 
  ![Screenshot](AzureStorageTypes.PNG)
+ 
  Click into 'Queue' and click '+ Queue'. 
  We will need to come back from this to get the Queue URL for our application.
  
@@ -52,6 +54,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  2. Create new Project -> ASP.NET Web Application (.NET Framework)
  3. Name the project (I am using .NET Framework 4.5.2)
  4. Choose WebApi and Ok
+ 
  ![Screenshot](WebApi.PNG)
  
  5. Open Views\Share\_Layout.cshtml and delete the body content, not the @Scripts
@@ -68,6 +71,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  Click submit, 
  Select the file from your Desktop that you have encrypted.
  Now it should appear encrypted in the Azure Queue
+ 
  ![Screenshot](QueueMessage.PNG)
  
  ### Decrypt it from our side
@@ -80,19 +84,28 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  Any application can have access to the Key Vault, so you can give another application access to the Key Vault and just use that application's credentials if you so choose.
  
  In this case, we will publish our 'Upload' Web Api project to Azure, Register it to Azure Active Directory and get the ClientId and Client Secret.
+ 
  ![Screenshot](PublishedAboutToTestUploadToQueue.PNG)
+ 
  ![Screenshot](AddAppReg.PNG)
+ 
  ![Screenshot](ClientSecret.PNG)
+ 
  Getting the client secret, copy the value to your local machine after save. We will put this in the Console application.
  The client id is here
  But before we forget, let's add our private/public key pair into the vault like so.
+ 
  ![Screenshot](Keys.PNG)
+ 
+ Remember the pfx file created by OpenSSL before? Upload it to Key Vault
  ![Screenshot](AboutToCreateKey.PNG)
+ 
  ![Screenshot](giveaccess.PNG)
  
  The pfx will be located where the openssl executable sits. 
  
  In the portal you will need to add a Key Vault, you can do so by clicking 'Create a Resource'
+ 
  ![Screenshot](KeyVault.PNG)
  
  Create an app to read off the queue
