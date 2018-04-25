@@ -50,20 +50,10 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  
  ### Sending the file 
  Now we need to create a small web app with a File Input button so we can transmit the encrypted message.
- 1. Open Visual Studio 
- 2. Create new Project -> ASP.NET Web Application (.NET Framework)
- 3. Name the project (I am using .NET Framework 4.5.2)
- 4. Choose WebApi and Ok
- 
- ![Screenshot](WebApi.PNG)
- 
- 5. Open Views\Share\_Layout.cshtml and delete the body content, not the @Scripts
- 6. Past this into the body
- 7. You may need to change the port number on the layout.cshtml file depending on what Visual Studio runs your app on
- 
- 7. Create the file 'UploadController' in the Controllers folder
- 8. Or , clone this repo
- 9. You will need to either do a Nuget Restore and/or add the Nuget Packages for 
+ * Clone this repo, it contains two projects. 
+ * The first is a web front-end to upload an encrypted file to the server. (Titled "WebFileUpload") is a console app that reads the encrypted file from the server and decrypts the secret message. (Titled "QueueReader")
+ * You should be able to run locally, you can publish to Azure like I do below for easy access. Just note, there is no authentication to the file upload page.
+ *You may need to either do a Nuget Restore and/or add the Nuget Packages for 
 	WindowsAzure.Storage
 	WindowsAzure.ConfigurationManager
  
