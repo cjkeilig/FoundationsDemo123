@@ -22,7 +22,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
   
   Create a Self-Signed Certificate
   
-  `openssl req -x509 -sha256 -nodes -days 265 -in priv.key -out cert.crt -config "C:\OpenSSL-Win32\bin\openssl.cfg"`
+  `openssl req -x509 -sha256 -nodes -days 365 -newkey rsa:2048 -keyout privateKey.key -out cert.crt -config "C:\OpenSSL-Win32\bin\openssl.cfg"`
   
   Create a PFX key pair to upload into Azure Key Vault
   
