@@ -2,7 +2,7 @@
 
 ## Goal
 Send an encrypted message to a Web API, store it, and decrypt the message using Azure Key Vault.
-Image that 'Alice' or a customer needs to send us a message securely and it is our business to decrypt the message. 
+Imagine that 'Alice' or a customer needs to send us a message securely and it is our business to decrypt the message. 
 
 ## **Disclaimer** 
 __Not all parts of this application are secure__ . 
@@ -11,7 +11,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
 
 ## Setup Steps
 1. Create public/private key pair (.pfx) file. The public key we will send to Alice to encrypt with. 
-2. Create client-facing web app application to submit encrypted files.
+2. Create client-facing web application to submit encrypted files.
 3. Create Azure Storage Account to store the files in a Queue.
 4. Create console application to read encrypted files off the queue.
 5. Decrypt files with Azure Key Vault.
@@ -43,7 +43,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  ### Azure Storage
  We need to set up a place to store our encrypted messages that we are sending so we will create an Azure Storage Account
  With your student Microsoft Imagine License you should be able to receive a free trial with 200$ of credit to your Azure account.
- After you have made an account with Microsoft, log-in to https://portal.azure.com/article-most-common-openssl-commands
+ After you have made an account with Microsoft, log-in to https://portal.azure.com
  
  I added a storage account called demoqueue which holds storage resources such as Blobs, Files, Tbles and Queues. We will be using a queue
  
@@ -62,8 +62,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
 	WindowsAzure.ConfigurationManager
  
  Run the application
- Click submit, 
- Select the file from your Desktop that you have encrypted.
+ Select the file from your Desktop that you have encrypted, submit.
  Now it should appear encrypted in the Azure Queue
  
  ![Screenshot](QueueMessage.PNG)
@@ -108,7 +107,7 @@ Do these steps at your _own risk_. You may find it a good exercise to secure the
  
  If all works, you should see the decrypted message in the Console Window
 
-Credits to: 
+Credit to:
 
 https://www.sslshopper.com/article-most-common-openssl-commands.html
 
