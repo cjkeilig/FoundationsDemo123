@@ -5,8 +5,8 @@ Send an encrypted message to a Web API, store it, and decrypt the message using 
 Image that 'Alice' or a customer needs to send us a message securely and it is our business to decrypt the message. 
 
 ## **Disclaimer** 
-__Not all parts of this application are secure__
-__There are connection strings and client secrets stored in source code__ .. This is solely for convenience sake in this demo. 
+__Not all parts of this application are secure__ . 
+__There are connection strings and client secrets stored in source code__ . This is solely for convenience sake in this demo. 
 Do these steps at your _own risk_. You may find it a good exercise to secure the parts of this demo that aren't so secure.
 
 ## Setup Steps
